@@ -2,6 +2,7 @@
 // https://pl.spoj.com/problems/FCTRL3
 // Dwie cyfry silni
 //
+
 package latweA.Strona1.A02_FCTRL3;
 
 import java.util.Scanner;
@@ -28,9 +29,9 @@ public class Main {
                 return new int[] {8,0};
             default:
                 return new int[] {0,0};
-
         }
     }
+	
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int tests;
@@ -40,7 +41,6 @@ public class Main {
             number = scanner.nextInt();
             int [] result = factorionNumbers(number);
             System.out.println(result[0] + " " + result[1]);
-
         }
     }
 }
