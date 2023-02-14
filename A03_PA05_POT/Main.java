@@ -2,6 +2,7 @@
 // https://pl.spoj.com/problems/PA05_POT
 // Czy umiesz potęgować
 //
+
 package latweA.Strona1.A03_PA05_POT;
 
 import java.util.Scanner;
@@ -11,7 +12,6 @@ public class Main { // moje
     public static void main(String[] args) {
         int base;
         int index;
-
 
         Scanner scanner = new Scanner(System.in);
         int tests = Integer.valueOf(scanner.nextLine());
