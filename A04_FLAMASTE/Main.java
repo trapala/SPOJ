@@ -2,6 +2,7 @@
 // https://pl.spoj.com/problems/FLAMASTE
 // Flamaster
 //
+
 package latweA.Strona1.A04_FLAMASTE;
 
 import java.util.Scanner;
@@ -19,7 +20,6 @@ public class Main {
 
             int numberOfChar = 1;
             String newString = "";
-
 
             for (int k = 0; k < strArray.length; k++) {
                 if (k != strArray.length-1 && strArray[k + 1].equals(strArray[k])) {
