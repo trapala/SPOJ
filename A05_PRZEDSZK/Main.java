@@ -2,6 +2,7 @@
 // https://pl.spoj.com/problems/PRZEDSZK
 // Przedszkolanka
 //
+
 package latweA.Strona1.A05_PRZEDSZK;
 
 import java.util.Scanner;
