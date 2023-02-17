@@ -2,6 +2,7 @@
 // https://pl.spoj.com/problems/RNO_DOD
 // Proste dodawanie
 //
+
 package latweA.Strona1.A06_RNO_DOD;
 
 import java.util.Scanner;
@@ -20,7 +21,7 @@ public class Main {
                 suma += scanner.nextInt();
                 line--;
             }
-
+			
             System.out.println(suma);
             tests--;
         }
