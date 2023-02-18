@@ -2,6 +2,7 @@
 // https://pl.spoj.com/problems/PP0501A/
 // NWD
 //
+
 package latweA.Strona1.A08_PP0501A;
 
 import java.util.Scanner;
