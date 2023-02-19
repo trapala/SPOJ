@@ -21,7 +21,7 @@ public class Main { // moje
             index = (Integer.valueOf(line[1]) % 4) + 4;
 
             double powMod = Math.pow(base, index) % 10;
-            System.out.println((int)powMod);
+            System.out.println((int) powMod);
 
 /*            base = scanner.nextInt();
             index = scanner.nextInt();
