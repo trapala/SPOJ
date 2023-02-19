@@ -7,8 +7,7 @@ package latweA.Strona1.A03_PA05_POT;
 
 import java.util.Scanner;
 
-public class Main { // moje
-
+public class Main {
     public static void main(String[] args) {
         int base;
         int index;
@@ -22,12 +21,6 @@ public class Main { // moje
 
             double powMod = Math.pow(base, index) % 10;
             System.out.println((int) powMod);
-
-/*            base = scanner.nextInt();
-            index = scanner.nextInt();
-            double powMod = Math.pow(base, index) % 10;
-            System.out.println((int)powMod);*/
-
         }
     }
 }
