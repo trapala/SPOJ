@@ -13,7 +13,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int tests = Integer.valueOf(scanner.nextLine());
 
-        while(tests > 0) {
+        while (tests > 0) {
             int line = scanner.nextInt();
             scanner.nextLine();
             int suma = 0;
@@ -21,7 +21,7 @@ public class Main {
                 suma += scanner.nextInt();
                 line--;
             }
-			
+
             System.out.println(suma);
             tests--;
         }

@@ -2,6 +2,7 @@
 // https://pl.spoj.com/problems/BFN1/
 // Zabawne Dodawanie Piotrusia
 //
+
 package latweA.Strona1.A07_BFN1;
 
 import java.util.Scanner;
@@ -34,9 +35,9 @@ public class Main {
                 count++;
             }
 
-        System.out.println(suma + " " + count);
+            System.out.println(suma + " " + count);
+        }
     }
-}
 
     static int reverse(int num) {
         int reversed = 0;

@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
         int base;
         int index;
-
+        
         Scanner scanner = new Scanner(System.in);
         int tests = Integer.valueOf(scanner.nextLine());
         for (int i = 0; i < tests; i++) {

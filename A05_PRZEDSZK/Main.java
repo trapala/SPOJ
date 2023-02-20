@@ -23,14 +23,15 @@ public class Main {
         }
     }
 
-    static int NWD (int a, int b) {
+    static int NWD(int a, int b) {
         if (b == 0)
             return a;
         else
-            return NWD(b, a%b);
+            return NWD(b, a % b);
     }
-     static int NWW (int a, int b) {
+
+    static int NWW(int a, int b) {
         return a * b / NWD(a, b);
-     }
+    }
 }
 

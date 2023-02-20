@@ -22,17 +22,16 @@ public class Main {
             String newString = "";
 
             for (int k = 0; k < strArray.length; k++) {
-                if (k != strArray.length-1 && strArray[k + 1].equals(strArray[k])) {
+                if (k != strArray.length - 1 && strArray[k + 1].equals(strArray[k])) {
                     numberOfChar++;
                 } else {
                     if (numberOfChar == 1) {
                         newString += strArray[k];
                         numberOfChar = 1;
-                    }  else if (numberOfChar > 2) {
+                    } else if (numberOfChar > 2) {
                         newString += strArray[k] + numberOfChar;
                         numberOfChar = 1;
-                    }
-                    else  {
+                    } else {
                         newString += strArray[k];
                         newString += strArray[k];
                         numberOfChar = 1;
