@@ -2,6 +2,7 @@
 // https://pl.spoj.com/problems/PP0502B/
 // Tablice
 //
+
 package latweA.Strona1.A09_PP0502B;
 
 import java.util.Scanner;
