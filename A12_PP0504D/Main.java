@@ -2,6 +2,7 @@
 // https://pl.spoj.com/problems/PP0504D/
 // Reprezentacja liczb typu float
 //
+
 package latweA.Strona1.A12_PP0504D;
 
 import java.util.Scanner;
@@ -12,12 +13,12 @@ public class Main {
 
         int tests = scanner.nextInt();
 
-        for (int i = 0; i<tests; i++) {
+        for (int i = 0; i < tests; i++) {
 
-            float line = scanner.nextFloat();;
+            float line = scanner.nextFloat();
 
             long bits = Float.floatToIntBits(line);
-        //    long bits = 272214023; // system dziesiętny
+            //    long bits = 272214023; // system dziesiętny
             System.out.println(bits);
             int k = (byte) (bits >> 24) & 0xff; // 16, iloczyn bitowy AND otrzymujemy 8 najmłodszych bitów po przesunięciu >>(w prawo)
             int k2 = (byte) (bits >> 16) & 0xff; // 57
