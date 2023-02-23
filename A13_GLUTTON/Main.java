@@ -2,6 +2,7 @@
 // https://pl.spoj.com/problems/GLUTTON/
 // Obżartuchy
 //
+
 package latweA.Strona1.A13_GLUTTON;
 
 import java.util.Scanner;
@@ -23,18 +24,16 @@ public class Main {
 
             for (int j = 0; j < n; j++) {
                 czasArray[j] = scanner.nextInt();
-
                 int czasDoby = 86400;
 
                 osobyArray[j] = czasDoby / czasArray[j];
-
                 suma += osobyArray[j];
             }
             if (suma % m != 0)
                 suma = (suma / m) + 1;
-            else
+            else {
                 suma = suma / m;
-
+            }
             System.out.println(suma);
         }
     }
