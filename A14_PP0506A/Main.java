@@ -2,6 +2,7 @@
 // https://pl.spoj.com/problems/PP0506A/
 // Sort 1
 //
+
 package latweA.Strona1.A14_PP0506A;
 
 import java.util.ArrayList;
