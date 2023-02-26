@@ -21,7 +21,6 @@ public class Main {
             int x = 0; // wschod-zachod
             int y = 0; // polnoc-poludnie
 
-
             int ilePar = scanner.nextInt();
             for (int j = 0; j < ilePar; j++) {
                 int kierunek = scanner.nextInt();
