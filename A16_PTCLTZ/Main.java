@@ -2,6 +2,7 @@
 // https://pl.spoj.com/problems/PTCLTZ/
 // Problem Collatza
 //
+
 package latweA.Strona1.A16_PTCLTZ;
 
 import java.util.Scanner;
