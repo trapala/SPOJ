@@ -2,6 +2,7 @@
 // https://pl.spoj.com/problems/PTROL/
 // ROL
 //
+
 package latweA.Strona1.A17_PTROL;
 
 import java.util.Scanner;
@@ -28,8 +29,7 @@ public class Main {
 
     static int[] leftArray(int[] array) {
         int temp = array[0];
-
-
+        
         for (int i = 0; i < array.length - 1; i++) {
             array[i] = array[i + 1];
         }
