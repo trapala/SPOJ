@@ -2,6 +2,7 @@
 // https://pl.spoj.com/problems/PTEST/
 // Zadanie próbne
 //
+
 package latweA.Strona1.A18_PTEST;
 
 import java.util.Scanner;
