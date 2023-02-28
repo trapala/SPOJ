@@ -2,6 +2,7 @@
 // https://pl.spoj.com/problems/EUCGAME/
 // Gra Euklidesa
 //
+
 package latweA.Strona1.A19_EUCGAME;
 
 import java.util.Scanner;
@@ -24,7 +25,6 @@ public class Main {
                 }
             }
             System.out.println(a + b); // max 15 pt
-
         }
     }
 }
