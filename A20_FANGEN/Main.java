@@ -1,7 +1,8 @@
 //
 // https://pl.spoj.com/problems/FANGEN/
 // Wiatraczki
-// 
+//
+
 package latweA.Strona1.A20_FANGEN;
 
 import java.util.ArrayList;
@@ -11,11 +12,13 @@ import java.util.Scanner;
 enum Kierunek {
     LEWO, PRAWO
 }
+
 interface ObslugaTablicy {
     public void Uzupelnij(char[][] tab);
 
     public void Wyswietl(char[][] tab);
 }
+
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -43,6 +46,7 @@ public class Main {
         }
     }
 }
+
 class Wiatrak implements ObslugaTablicy {
     public void Uzupelnij(char[][] tab) {
         for (int i = 0; i < tab.length; i++) {
@@ -51,6 +55,7 @@ class Wiatrak implements ObslugaTablicy {
             }
         }
     }
+
     public void Rysuj(char[][] tab, Kierunek kierunek) {
         for (int i = 0; i < (tab.length / 2) - 1; i++) {
             for (int j = i; j < tab.length - i - 1; j++) {
@@ -75,6 +80,7 @@ class Wiatrak implements ObslugaTablicy {
             }
         }
     }
+
     public void Wyswietl(char[][] tab) {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < tab.length; i++) {
