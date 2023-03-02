@@ -2,6 +2,7 @@
 // https://pl.spoj.com/problems/BINOMS/
 // Dwumiany
 //
+
 package latweA.Strona1.A21_BINOMS;
 
 import java.util.Scanner;
@@ -25,7 +26,6 @@ public class Main {
     private static double SymbolNewtona(double a, double b) {
         double wynik = 1;
         for (int i = 1; i <= b; i++) {
-
             wynik = (wynik * (a - i + 1)) / i;
         }
         return Math.round(wynik);
