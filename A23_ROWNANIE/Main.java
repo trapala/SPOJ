@@ -2,6 +2,7 @@
 // https://pl.spoj.com/problems/ROWNANIE/
 // Równanie kwadratowe
 //
+
 package latweA.Strona1.A23_ROWNANIE;
 
 import java.util.Locale;
@@ -9,8 +10,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-// https://programuj.pl/blog/java-formatowanie-liczb-zero-czy-przecinek
-        Locale.setDefault(Locale.forLanguageTag("en-US")); // tu jest myk z lokalizacją do klasy Scanner
+        Locale.setDefault(Locale.forLanguageTag("en-US"));
         Scanner scanner = new Scanner(System.in);
 
         while (scanner.hasNext()) {
