@@ -2,6 +2,7 @@
 // https://pl.spoj.com/problems/STOS/
 // Stos
 // brak odpowiedzi
+
 package latweA.Strona1.A25_STOS_dobre;
 
 import java.util.Scanner;
