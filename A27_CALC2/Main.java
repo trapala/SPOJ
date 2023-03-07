@@ -2,6 +2,7 @@
 // https://pl.spoj.com/problems/CALC2/
 // Kalkulator2
 //
+
 package latweA.Strona1.A27_CALC2;
 
 import java.util.Arrays;
