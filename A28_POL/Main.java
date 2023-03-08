@@ -2,6 +2,7 @@
 // https://pl.spoj.com/problems/POL/
 // Połowa
 //
+
 package latweA.Strona1.A28_POL;
 
 import java.util.Scanner;
@@ -14,7 +15,6 @@ public class Main {
 
         for (int i = 0; i < howMany; i++) {
             String line = scanner.next();
-
             System.out.println(line.substring(0, line.length() / 2));
         }
     }
