@@ -2,6 +2,7 @@
 // https://pl.spoj.com/problems/VSR/
 // Prędkość średnia
 //
+
 package latweA.Strona1.A29_VSR;
 
 import java.io.BufferedOutputStream;
