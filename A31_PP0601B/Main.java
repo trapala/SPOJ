@@ -2,6 +2,7 @@
 // https://pl.spoj.com/problems/PP0601B/
 // Podzielność
 //
+
 package latweA.Strona1.A31_PP0601B;
 
 import java.util.Scanner;
@@ -28,12 +29,13 @@ public class Main {
                 n--;
             }
 
-            for (int element : list)
+            for (int element : list) {
                 System.out.print(element + " ");
+            }
+
             System.out.println();
 
             list.clear();
-
             t--;
         }
     }
