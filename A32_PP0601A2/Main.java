@@ -2,6 +2,7 @@
 // https://pl.spoj.com/problems/PP0601A2/
 // Test 3
 //
+
 package latweA.Strona1.A32_PP0601A2;
 
 import java.util.Scanner;
@@ -17,12 +18,12 @@ public class Main {
             b = a;
             a = Integer.parseInt(scanner.nextLine());
 
-            if(a == 42 && b !=42){
+            if (a == 42 && b != 42) {
                 count--;
             }
 
             System.out.println(a);
-            if(count == 0){
+            if (count == 0) {
                 return;
             }
         }
