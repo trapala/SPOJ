@@ -2,6 +2,7 @@
 // https://pl.spoj.com/problems/TRN/
 // Transponowanie macierzy
 //
+
 package latweA.Strona1.A33_TRN;
 
 import java.io.DataInputStream;
@@ -56,8 +57,8 @@ public class Main {
         }
 
         for (int i = 0; i < tab[0].length; i++) { // do ilości elementów w wierszu o indeksie 0
-            for(int j=0;j<tab.length;j++){ // do ilości kolumn
-                System.out.print(tab[j][i]+" ");
+            for (int j = 0; j < tab.length; j++) { // do ilości kolumn
+                System.out.print(tab[j][i] + " ");
             }
             System.out.println();
         }
