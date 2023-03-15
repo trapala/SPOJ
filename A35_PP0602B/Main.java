@@ -2,6 +2,7 @@
 // https://pl.spoj.com/problems/PP0602B/
 // Tabelki liczb
 //
+
 package latweA.Strona1.A35_PP0602B;
 
 import java.util.Scanner;
