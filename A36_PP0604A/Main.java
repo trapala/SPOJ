@@ -2,6 +2,7 @@
 // https://pl.spoj.com/problems/PP0604A/
 // Średnia arytmetyczna
 //
+
 package latweA.Strona1.A36_PP0604A;
 
 import java.util.Scanner;
@@ -21,7 +22,7 @@ public class Main {
 
         while (t > 0) {
             suma = 0;
-            najnizsza= 100;
+            najnizsza = 100;
 
             int ileLiczb = scanner.nextInt();
 
@@ -33,7 +34,7 @@ public class Main {
 
             sredia = (double) suma / ileLiczb;
 
-            for (int i = 0; i < ileLiczb; i++){
+            for (int i = 0; i < ileLiczb; i++) {
 
                 wartosc = Math.abs(tablica[i] - sredia);
                 if (wartosc == najnizsza) {
@@ -45,7 +46,7 @@ public class Main {
                 }
             }
             System.out.println(wynik);
-                t--;
+            t--;
         }
     }
 }
