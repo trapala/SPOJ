@@ -2,6 +2,7 @@
 // https://pl.spoj.com/problems/MWPZ06X/
 // Nowa działka
 //
+
 package latweA.Strona1.A37_MWPZ06X;
 
 import java.util.Scanner;
