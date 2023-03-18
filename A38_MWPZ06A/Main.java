@@ -2,6 +2,7 @@
 // https://pl.spoj.com/problems/MWPZ06A/
 // Ciążowy specjalista
 //
+
 package latweA.Strona1.A38_MWPZ06A;
 
 import java.util.Scanner;
