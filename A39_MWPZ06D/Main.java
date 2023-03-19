@@ -2,6 +2,7 @@
 // https://pl.spoj.com/problems/MWPZ06D/
 // Imieniny
 //
+
 package latweA.Strona1.A39_MWPZ06D;
 
 import java.util.Scanner;
@@ -35,7 +36,7 @@ public class Main {
                 System.out.println("NIE");
                 continue;
             }
-
+            
             l--;
 
             if (c % l == 0) System.out.println("NIE");
