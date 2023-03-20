@@ -2,8 +2,8 @@
 // https://pl.spoj.com/problems/MWPZ06H/
 // Konkurs pseudomatematyczny
 //
-package latweA.Strona1.A40_MWPZ06H;
 
+package latweA.Strona1.A40_MWPZ06H;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -38,16 +38,12 @@ public class Main {
                 licznik++; // liczymy ilość wystąpień maksymalnej liczby
             }
         }
-       // System.out.println("Licznik: " + licznik);
-
         StringBuilder sb = new StringBuilder();
         for (int a = 0; a < licznik; a++) { // zależnie od ilości wystąpień maksymalnej liczby w tablicy
             sb.append(maks).append(" "); // dodajemy wartość maksymalną na początku łańcucha
-        //    System.out.println("max:" + maks);
         }
         for (int b = 0; b < tablica.length - licznik; b++) { // dla reszty liczb z tablicy
             sb.append(tablica[b]).append(" "); // dodajemy kolejne wartości liczb do łańcucha
-        //    System.out.println("tablica[b]: " + tablica[b]);
         }
         System.out.println(sb); // zwracamy łańcuch
     }
