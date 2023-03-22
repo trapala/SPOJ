@@ -2,7 +2,8 @@
 // https://pl.spoj.com/problems/JROWLIN/
 // Równanie liniowe
 //
-package latweA.Strona1.A41_JROWLIN;
+
+package latweA.Strona1.A42_JROWLIN;
 
 import java.io.BufferedReader;
 import java.io.IOException;
