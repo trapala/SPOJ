@@ -3,7 +3,7 @@
 // Niekolejne
 // przekroczono limit czasu, odpowiedź zaakceptowana z Main2 (przepisane na C++)
 
-package latweA.Strona1.A40_NIEKOLEJ;
+package latweA.Strona1.A41_NIEKOLEJ;
 
 import java.io.*;
 
