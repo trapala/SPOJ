@@ -2,7 +2,7 @@
 // https://pl.spoj.com/problems/JWSPLIN/
 // Współliniowość punktów
 // przekroczono limit czasu
-package latweA.Strona1.A42_JWSPLIN;
+package latweA.Strona1.A43_JWSPLIN;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -27,8 +27,7 @@ public class Main {
             int y2 = Integer.parseInt(line[3]);
             int x3 = Integer.parseInt(line[4]);
             int y3 = Integer.parseInt(line[5]);
-
-
+            
             lewaStrona = (x2 - x1) * (y3 - y1);
 
             prawaStrona = (y2 - y1) * (x3 - x1);
