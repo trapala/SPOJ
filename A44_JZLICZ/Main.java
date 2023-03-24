@@ -2,7 +2,8 @@
 // https://pl.spoj.com/problems/JZLICZ/
 // Zliczacz liter
 //
-package latweA.Strona1.A43_JZLICZ;
+
+package latweA.Strona1.A44_JZLICZ;
 
 import java.util.*;
 
@@ -25,11 +26,9 @@ public class Main {
             for (int j = 0; j < charArray.length; j++) {
                 int count = 0;
                 for (int k = 0; k < charArray.length; k++) {
-
                     if (charArray[j] == charArray[k]) {
                         count++;
                     }
-
                 }
                 if (Character.isLowerCase(charArray[j])) {
                     tmLower.put(charArray[j], count);
@@ -38,8 +37,7 @@ public class Main {
                     tmUpper.put(charArray[j], count);
                 }
             }
-
-        } //end t
+        }
 
         Set<Map.Entry<Character, Integer>> setLower = tmLower.entrySet();
         for (Map.Entry<Character, Integer> me : setLower) {
@@ -49,6 +47,5 @@ public class Main {
         for (Map.Entry<Character, Integer> me : setUpper) {
             System.out.println(me.getKey() + " " + me.getValue());
         }
-
     }
 }
