@@ -2,7 +2,8 @@
 // https://pl.spoj.com/problems/JPESEL/
 // Pesel
 //
-package latweA.Strona1.A44_JPESEL;
+
+package latweA.Strona1.A45_JPESEL;
 
 import java.util.Scanner;
 
@@ -29,7 +30,6 @@ public class Main {
             } else {
                 System.out.println("N");
             }
-
         }
     }
 }
