@@ -3,7 +3,7 @@
 // ROL (k)
 //
 
-package latweA.Strona1.A45_PP0602D;
+package latweA.Strona1.A46_PP0602D;
 
 import java.util.Scanner;
 
