@@ -2,6 +2,7 @@
 // https://pl.spoj.com/problems/PP0602D/
 // ROL (k)
 //
+
 package latweA.Strona1.A45_PP0602D;
 
 import java.util.Scanner;
@@ -20,7 +21,6 @@ public class Main {
         for (int i = 0; i < numbersArray.length; i++) {
             numbersArray[i] = Integer.parseInt(line[i]);
         }
-
         for (int i = k; i < n; i++) {
             System.out.print(numbersArray[i] + " ");
         }
