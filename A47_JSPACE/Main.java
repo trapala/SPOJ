@@ -2,7 +2,8 @@
 // https://pl.spoj.com/problems/JSPACE/
 // Spacje
 //
-package latweA.Strona1.A46_JSPACE;
+
+package latweA.Strona1.A47_JSPACE;
 
 import java.util.Scanner;
 
