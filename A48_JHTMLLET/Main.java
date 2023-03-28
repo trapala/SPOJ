@@ -2,6 +2,7 @@
 // https://pl.spoj.com/problems/JHTMLLET/
 // Tagi HTML
 //
+
 package latweA.Strona1.A47_JHTMLLET;
 
 import java.util.Scanner;
@@ -37,6 +38,5 @@ public class Main {
             System.out.println(output);
             output = new StringBuilder();
         }
-
     }
 }
