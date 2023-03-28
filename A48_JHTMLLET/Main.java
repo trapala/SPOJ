@@ -3,7 +3,7 @@
 // Tagi HTML
 //
 
-package latweA.Strona1.A47_JHTMLLET;
+package latweA.Strona1.A48_JHTMLLET;
 
 import java.util.Scanner;
 
