@@ -3,7 +3,7 @@
 // Szyfr Cezara
 //
 
-package latweA.Strona1.A48_JSZYCER;
+package latweA.Strona1.A49_JSZYCER;
 
 import java.util.Scanner;
 
