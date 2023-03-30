@@ -3,7 +3,7 @@
 // Liczba na słowo
 // Przekroczono limit czasu, wolne wejście-wyjście
 
-package latweA.Strona1.A49_JLITOSL_przekroczenieCzasu;
+package latweA.Strona1.A50_JLITOSL_przekroczenieCzasu;
 
 import java.util.Scanner;
 
