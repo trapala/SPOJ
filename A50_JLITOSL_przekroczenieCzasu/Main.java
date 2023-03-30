@@ -2,6 +2,7 @@
 // https://pl.spoj.com/problems/JLITOSL/
 // Liczba na słowo
 // Przekroczono limit czasu, wolne wejście-wyjście
+
 package latweA.Strona1.A49_JLITOSL_przekroczenieCzasu;
 
 import java.util.Scanner;
@@ -26,7 +27,6 @@ public class Main {
             int liczba, koncowka;
             int rzad = 0;
             int j = 0;
-
 
             liczba = scanner.nextInt();
 
@@ -59,5 +59,3 @@ public class Main {
         }
     }
 }
-
-// http://www.algorytm.org/inne/zamiana-liczby-na-slowa/zlns-j.html
