@@ -2,7 +2,8 @@
 // https://pl.spoj.com/problems/POTSAM/
 // Samolot
 //
-package latweA.Strona2.A50_POTSAM;
+
+package latweA.Strona2.A51_POTSAM;
 
 import java.util.Scanner;
 
