@@ -2,7 +2,8 @@
 // https://pl.spoj.com/problems/WSEGA/
 // Wiek segmentolka
 //
-package latweA.Strona2.A52_WSEGA;
+
+package latweA.Strona2.A53_WSEGA;
 
 import java.util.Scanner;
 
