@@ -1,6 +1,6 @@
 // źródło github
 
-package latweA.Strona1.A49_JLITOSL_przekroczenieCzasu;
+package latweA.Strona1.A50_JLITOSL_przekroczenieCzasu;
 
 public class Main3_Csharp {
 
