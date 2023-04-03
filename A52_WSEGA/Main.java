@@ -12,7 +12,6 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         int tests = scanner.nextInt();
-
         while (tests > 0) {
             int numberOfSegments = scanner.nextInt();
             int buffer = 0;
