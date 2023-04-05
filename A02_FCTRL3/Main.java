@@ -36,7 +36,9 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int tests;
         int number;
+
         tests = scanner.nextInt();
+
         for (int i = 0; i < tests; i++) {
             number = scanner.nextInt();
             int[] result = factorionNumbers(number);
