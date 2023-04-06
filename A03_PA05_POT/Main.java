@@ -14,11 +14,11 @@ public class Main {
         
         Scanner scanner = new Scanner(System.in);
         int tests = Integer.valueOf(scanner.nextLine());
+
         for (int i = 0; i < tests; i++) {
             String[] line = scanner.nextLine().split(" ");
             base = Integer.valueOf(line[0]) % 10;
             index = (Integer.valueOf(line[1]) % 4) + 4;
-
             double powMod = Math.pow(base, index) % 10;
             System.out.println((int) powMod);
         }
