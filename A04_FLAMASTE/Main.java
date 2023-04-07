@@ -15,7 +15,6 @@ public class Main {
 
         for (int i = 0; i < test; i++) {
             String str = scanner.next();
-
             String[] strArray = str.split("");
 
             int numberOfChar = 1;
