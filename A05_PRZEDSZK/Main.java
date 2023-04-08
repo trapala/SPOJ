@@ -10,15 +10,15 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         int firstGroup, secondGroup;
-
         Scanner scanner = new Scanner(System.in);
+
         int tests = Integer.parseInt(scanner.nextLine());
 
         for (int i = 0; i < tests; i++) {
             String[] line = scanner.nextLine().split(" ");
             firstGroup = Integer.parseInt(line[0]);
             secondGroup = Integer.parseInt(line[1]);
-
+            
             System.out.println(NWW(firstGroup, secondGroup));
         }
     }
