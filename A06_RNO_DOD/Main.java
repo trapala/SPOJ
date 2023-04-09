@@ -17,11 +17,11 @@ public class Main {
             int line = scanner.nextInt();
             scanner.nextLine();
             int suma = 0;
+            
             while (line > 0) {
                 suma += scanner.nextInt();
                 line--;
             }
-
             System.out.println(suma);
             tests--;
         }
