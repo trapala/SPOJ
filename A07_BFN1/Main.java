@@ -30,11 +30,9 @@ public class Main {
             }
 
             while (suma != reverse(suma)) {
-
                 suma += reverse(suma);
                 count++;
             }
-
             System.out.println(suma + " " + count);
         }
     }
