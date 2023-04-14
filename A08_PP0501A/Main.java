@@ -10,7 +10,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         int firstNumber, secondNumber;
-
         Scanner scanner = new Scanner(System.in);
         int tests = Integer.parseInt(scanner.nextLine());
 
