@@ -19,7 +19,6 @@ public class Main {
             for (int j = 0; j < n; j++) {
                 arrayInt[j] = scanner.nextInt();
             }
-
             for (int k = n - 1; k >= 0; k--) {
                 System.out.print(arrayInt[k] + " ");
             }
