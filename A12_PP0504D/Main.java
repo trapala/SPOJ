@@ -10,13 +10,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         int tests = scanner.nextInt();
 
         for (int i = 0; i < tests; i++) {
 
             float line = scanner.nextFloat();
-
             long bits = Float.floatToIntBits(line);
             //    long bits = 272214023; // system dziesiętny
             System.out.println(bits);
