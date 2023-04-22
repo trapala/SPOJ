@@ -14,18 +14,15 @@ public class Main {
         int tests = Integer.parseInt(scanner.nextLine());
 
         for (int i = 0; i < tests; i++) {
-
             int n = scanner.nextInt();
             int m = scanner.nextInt();
             int suma = 0;
-
             int[] czasArray = new int[n];
             int[] osobyArray = new int[n];
 
             for (int j = 0; j < n; j++) {
                 czasArray[j] = scanner.nextInt();
                 int czasDoby = 86400;
-
                 osobyArray[j] = czasDoby / czasArray[j];
                 suma += osobyArray[j];
             }
