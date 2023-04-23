@@ -50,7 +50,6 @@ public class Main {
 
         int ilePunktow = scanner.nextInt();
         for (int j = 0; j < ilePunktow; j++) {
-
             String nazwa = scanner.next();
             int x = scanner.nextInt();
             int y = scanner.nextInt();
@@ -66,7 +65,6 @@ public class Main {
         int tests = scanner.nextInt();
 
         for (int i = 0; i < tests; i++) {
-
             ArrayList<MyComp> punkty = new ArrayList<>();
             List(punkty);
             Collections.sort(punkty);
