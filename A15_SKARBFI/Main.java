@@ -10,14 +10,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         int tests = scanner.nextInt();
 
         int[] tabX = new int[tests];
         int[] tabY = new int[tests];
 
         for (int i = 0; i < tests; i++) {
-
             int x = 0; // wschod-zachod
             int y = 0; // polnoc-poludnie
 
