@@ -10,12 +10,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         int tests = scanner.nextInt();
 
         for (int i = 0; i < tests; i++) {
             int ileLiczb = scanner.nextInt();
-
             int[] liczby = new int[ileLiczb];
 
             for (int j = 0; j < ileLiczb; j++) {
