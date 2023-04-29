@@ -15,7 +15,6 @@ enum Kierunek {
 
 interface ObslugaTablicy {
     public void Uzupelnij(char[][] tab);
-
     public void Wyswietl(char[][] tab);
 }
 
