@@ -11,6 +11,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int suma = 0;
+        
         while (scanner.hasNext()) {
             if (scanner.hasNextInt()) {
                 int liczba = scanner.nextInt();
