@@ -21,7 +21,6 @@ public class Main {
 
                 double delta = Math.pow(B, 2) - (4 * A * C);
                 System.out.println(result(delta));
-
             } else {
                 return;
             }
