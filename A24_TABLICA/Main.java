@@ -11,7 +11,6 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         String[] line = scanner.nextLine().split(" ");
-
         int[] numer = new int[line.length];
 
         for (int i = 0; i < line.length; i++) {
