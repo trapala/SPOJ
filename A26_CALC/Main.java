@@ -9,9 +9,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws java.lang.Exception {
-        Scanner scanner = new Scanner(System.in);
-
+        Scanner scanner = new Scanner(System.in)
         int suma;
+        
         while (scanner.hasNext()) {
             String znak = scanner.next();
             int a = scanner.nextInt();
