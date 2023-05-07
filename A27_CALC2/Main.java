@@ -17,7 +17,6 @@ public class Main {
 
         int suma;
         while (scanner.hasNext()) {
-
             String znak = scanner.next();
             int a = scanner.nextInt();
             int b = scanner.nextInt();
