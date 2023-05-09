@@ -53,7 +53,6 @@ public class Main {
         for (int i = 0; i < tests; i++) {
             int v1 = rd.nextInt();
             int v2 = rd.nextInt();
-
             int wynik = (2 * v1 * v2) / (v1 + v2);
             sb.append(wynik).append("\n");
         }
