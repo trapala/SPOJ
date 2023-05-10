@@ -20,7 +20,6 @@ public class Main {
     }
 
     private static String system11(int liczba) {
-        // cyfry:0,1,2,3,4,5,6,7,8,9,A
         StringBuilder sb = new StringBuilder();
         while (liczba != 0) {
             if (liczba % 11 <= 9) {
