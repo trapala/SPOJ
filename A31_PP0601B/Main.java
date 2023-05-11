@@ -11,7 +11,6 @@ import java.util.TreeSet;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         int t = Integer.parseInt(scanner.nextLine());
 
         TreeSet<Integer> list = new TreeSet<>();
@@ -28,7 +27,6 @@ public class Main {
                 }
                 n--;
             }
-
             for (int element : list) {
                 System.out.print(element + " ");
             }
