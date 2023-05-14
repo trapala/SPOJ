@@ -21,7 +21,6 @@ public class Main {
             if (a == 42 && b != 42) {
                 count--;
             }
-
             System.out.println(a);
             if (count == 0) {
                 return;
