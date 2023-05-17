@@ -45,7 +45,6 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         Main.Reader rd = new Main.Reader();
-
         int r = rd.nextInt();
         int c = rd.nextInt();
 
