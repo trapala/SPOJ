@@ -41,7 +41,6 @@ public class Main {
             listaParzyste.clear();
             listaNieParzyste.clear();
             lista.clear();
-
             t--;
         }
     }
