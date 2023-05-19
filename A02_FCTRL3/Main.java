@@ -5,6 +5,8 @@
 
 package latweA.Strona1.A02_FCTRL3;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -35,14 +37,19 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int tests;
-        int number;
 
         tests = scanner.nextInt();
 
+        List<Integer> numbers = new ArrayList<>();
         for (int i = 0; i < tests; i++) {
-            number = scanner.nextInt();
-            int[] result = factorionNumbers(number);
-            System.out.println(result[0] + " " + result[1]);
+            numbers.add(scanner.nextInt());
         }
+
+        numbers.stream()
+                .map(Main::factorionNumbers)
+                .forEach(result -> System.out.println(result[0] + " " + result[1]));
     }
 }
+
+// Użyłem kolekcji List do przechowywania liczb testowych.
+// Następnie, przy użyciu strumieni, mapuję każdą liczbę na wynik factorionNumbers() i wyświetlam wynik w odpowiednim formacie.
