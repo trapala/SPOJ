@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class Main {
     // Metoda zwracająca dwie ostatnie cyfry silni dla danej liczby
-    private static int[] factoriolNumbers(int num) {
+    private static int[] factorialNumbers(int num) {
         int tensDigit;
         int onesDigit;
 
@@ -42,13 +42,13 @@ public class Main {
         }
 
         numbers.stream()
-                .map(Main::factoriolNumbers) // Wywołaj metodę factoriolNumbers dla każdej liczby
+                .map(Main::factorialNumbers) // Wywołaj metodę factorialNumbers dla każdej liczby
                 .forEach(result -> System.out.println(result[0] + " " + result[1])); // Wyświetl wynik w formacie "cyfra_dziesiątek cyfra_jedności"
     }
 }
 
 /*
- W metodzie factoriolNumbers, zastosowałem proste obliczenia matematyczne, aby nie przekroczyć limitu czasu.
+ W metodzie factorialNumbers, zastosowałem proste obliczenia matematyczne, aby nie przekroczyć limitu czasu.
  Jeżeli liczba jest większa lub równa 10, to zwracane są cyfry 0.
  W przeciwnym przypadku obliczana jest silnia przy użyciu modulo 100, a następnie cyfry dziesiątek i jedności są wydzielane za pomocą dzielenia i reszty z dzielenia.
  Użyłem kolekcji List do przechowywania liczb testowych.
