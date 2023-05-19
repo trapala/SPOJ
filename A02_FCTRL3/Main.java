@@ -3,7 +3,7 @@ https://pl.spoj.com/problems/FCTRL3
 Dwie cyfry silni
 */
 
-package latweA.Strona1.A02_FCTRL3;
+package A02_FCTRL3;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class Main {
     // Metoda zwracająca dwie ostatnie cyfry silni dla danej liczby
-    private static int[] factorialNumbers(int num) {
+    private static int[] calculateFactorialLastTwoDigits(int num) {
         int tensDigit;
         int onesDigit;
 
@@ -42,15 +42,15 @@ public class Main {
         }
 
         numbers.stream()
-                .map(Main::factorialNumbers) // Wywołaj metodę factorialNumbers dla każdej liczby
+                .map(Main::calculateFactorialLastTwoDigits) // Wywołaj metodę calculateFactorialLastTwoDigits() dla każdej liczby
                 .forEach(result -> System.out.println(result[0] + " " + result[1])); // Wyświetl wynik w formacie "cyfra_dziesiątek cyfra_jedności"
     }
 }
 
 /*
- W metodzie factorialNumbers, zastosowałem proste obliczenia matematyczne, aby nie przekroczyć limitu czasu.
+ W metodzie calculateFactorialLastTwoDigits() zastosowałem proste obliczenia matematyczne, aby nie przekroczyć limitu czasu odpowiedzi.
  Jeżeli liczba jest większa lub równa 10, to zwracane są cyfry 0.
  W przeciwnym przypadku obliczana jest silnia przy użyciu modulo 100, a następnie cyfry dziesiątek i jedności są wydzielane za pomocą dzielenia i reszty z dzielenia.
  Użyłem kolekcji List do przechowywania liczb testowych.
- Następnie, przy użyciu strumieni, mapuję każdą liczbę na wynik factorionNumbers() i wyświetlam wynik w odpowiednim formacie.
+ Następnie, przy użyciu strumieni, mapuję każdą liczbę na wynik calculateFactorialLastTwoDigits() i wyświetlam wynik w odpowiednim formacie.
  */

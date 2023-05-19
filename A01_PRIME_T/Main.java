@@ -3,7 +3,7 @@ https://pl.spoj.com/problems/PRIME_T
 Liczby Pierwsze
 */
 
-package latweA.Strona1.A01_PRIME_T;
+package A01_PRIME_T;
 
 import java.util.ArrayList;
 import java.util.List;
