@@ -1,7 +1,7 @@
-//
-// https://pl.spoj.com/problems/FCTRL3
-// Dwie cyfry silni
-//
+/*
+https://pl.spoj.com/problems/FCTRL3
+Dwie cyfry silni
+*/
 
 package latweA.Strona1.A02_FCTRL3;
 
@@ -47,8 +47,10 @@ public class Main {
     }
 }
 
-// W metodzie factoriolNumbers, zastosowałem proste obliczenia matematyczne, aby nie przekroczyć limitu czasu.
-// Jeżeli liczba jest większa lub równa 10, to zwracane są cyfry 0.
-// W przeciwnym przypadku obliczana jest silnia przy użyciu modulo 100, a następnie cyfry dziesiątek i jedności są wydzielane za pomocą dzielenia i reszty z dzielenia.
-// Użyłem kolekcji List do przechowywania liczb testowych.
-// Następnie, przy użyciu strumieni, mapuję każdą liczbę na wynik factorionNumbers() i wyświetlam wynik w odpowiednim formacie.
+/*
+ W metodzie factoriolNumbers, zastosowałem proste obliczenia matematyczne, aby nie przekroczyć limitu czasu.
+ Jeżeli liczba jest większa lub równa 10, to zwracane są cyfry 0.
+ W przeciwnym przypadku obliczana jest silnia przy użyciu modulo 100, a następnie cyfry dziesiątek i jedności są wydzielane za pomocą dzielenia i reszty z dzielenia.
+ Użyłem kolekcji List do przechowywania liczb testowych.
+ Następnie, przy użyciu strumieni, mapuję każdą liczbę na wynik factorionNumbers() i wyświetlam wynik w odpowiednim formacie.
+ */
