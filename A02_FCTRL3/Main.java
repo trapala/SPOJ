@@ -11,28 +11,23 @@ import java.util.Scanner;
 
 public class Main {
     // Metoda zwracająca dwie ostatnie cyfry silni dla danej liczby
-    private static int[] factorionNumbers(int num) {
-        switch (num) {
-            case 0:
-            case 1:
-                return new int[]{0, 1};
-            case 2:
-                return new int[]{0, 2};
-            case 5:
-            case 6:
-            case 8:
-                return new int[]{2, 0};
-            case 3:
-                return new int[]{0, 6};
-            case 4:
-                return new int[]{2, 4};
-            case 7:
-                return new int[]{4, 0};
-            case 9:
-                return new int[]{8, 0};
-            default:
-                return new int[]{0, 0};
+    private static int[] factoriolNumbers(int num) {
+        int tensDigit;
+        int onesDigit;
+
+        if (num >= 10) {
+            tensDigit = 0;
+            onesDigit = 0;
+        } else {
+            int factorial = 1;
+            for (int i = 2; i <= num; i++) {
+                factorial = (factorial * i) % 100;
+            }
+            tensDigit = factorial / 10;
+            onesDigit = factorial % 10;
         }
+
+        return new int[]{tensDigit, onesDigit};
     }
 
     public static void main(String[] args) {
@@ -47,10 +42,13 @@ public class Main {
         }
 
         numbers.stream()
-                .map(Main::factorionNumbers) // Wywołaj metodę factorionNumbers dla każdej liczby
+                .map(Main::factoriolNumbers) // Wywołaj metodę factoriolNumbers dla każdej liczby
                 .forEach(result -> System.out.println(result[0] + " " + result[1])); // Wyświetl wynik w formacie "cyfra_dziesiątek cyfra_jedności"
     }
 }
 
+// W metodzie factoriolNumbers, zastosowałem proste obliczenia matematyczne, aby nie przekroczyć limitu czasu.
+// Jeżeli liczba jest większa lub równa 10, to zwracane są cyfry 0.
+// W przeciwnym przypadku obliczana jest silnia przy użyciu modulo 100, a następnie cyfry dziesiątek i jedności są wydzielane za pomocą dzielenia i reszty z dzielenia.
 // Użyłem kolekcji List do przechowywania liczb testowych.
 // Następnie, przy użyciu strumieni, mapuję każdą liczbę na wynik factorionNumbers() i wyświetlam wynik w odpowiednim formacie.
