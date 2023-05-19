@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
+    // Metoda zwracająca dwie ostatnie cyfry silni dla danej liczby
     private static int[] factorionNumbers(int num) {
         switch (num) {
             case 0:
@@ -42,12 +43,12 @@ public class Main {
 
         List<Integer> numbers = new ArrayList<>();
         for (int i = 0; i < tests; i++) {
-            numbers.add(scanner.nextInt());
+            numbers.add(scanner.nextInt()); // Wczytaj liczby testowe
         }
 
         numbers.stream()
-                .map(Main::factorionNumbers)
-                .forEach(result -> System.out.println(result[0] + " " + result[1]));
+                .map(Main::factorionNumbers) // Wywołaj metodę factorionNumbers dla każdej liczby
+                .forEach(result -> System.out.println(result[0] + " " + result[1])); // Wyświetl wynik w formacie "cyfra_dziesiątek cyfra_jedności"
     }
 }
 
