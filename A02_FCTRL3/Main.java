@@ -1,7 +1,7 @@
 /*
-https://pl.spoj.com/problems/FCTRL3
-Dwie cyfry silni
-*/
+ https://pl.spoj.com/problems/FCTRL3
+ Dwie cyfry silni
+ */
 
 package A02_FCTRL3;
 
@@ -10,7 +10,12 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    // Metoda zwracająca dwie ostatnie cyfry silni dla danej liczby
+    /**
+     * Metoda zwracająca dwie ostatnie cyfry silni dla danej liczby.
+     *
+     * @param num liczba, dla której obliczane są dwie ostatnie cyfry silni
+     * @return tablica zawierająca dwie ostatnie cyfry silni: [cyfra_dziesiątek, cyfra_jedności]
+     */
     private static int[] calculateFactorialLastTwoDigits(int num) {
         int tensDigit;
         int onesDigit;
