@@ -47,8 +47,8 @@ public class Main {
 }
 
 /*
-Użyłem kolekcji List do przechowywania wczytanych liczb.
-Następnie przekształcam tę listę na strumień przy pomocy metody stream().
-Wykorzystuję metodę map() do wywołania metody isPrime() na każdym elemencie strumienia.
-Na końcu używam metody forEach() do wyświetlenia wyników dla każdej liczby.
-*/
+ Użyłem kolekcji List do przechowywania wczytanych liczb.
+ Następnie przekształcam tę listę na strumień przy pomocy metody stream().
+ Wykorzystuję metodę map() do wywołania metody isPrime() na każdym elemencie strumienia.
+ Na końcu używam metody forEach() do wyświetlenia wyników dla każdej liczby.
+ */
