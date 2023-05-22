@@ -12,7 +12,7 @@ Repozytorium zawiera rozwiązania wielu zadań z [SPOJ](https://pl.spoj.com/prob
 
 ## Opis
 
-[SPOJ](https://pl.spoj.com/problems/latwe/) to platforma internetowa, która oferuje zadania programistyczne do rozwiązania w różnych językach programowania. Repozytorium zawiera profesjonalne rozwiązania wielu zadań z kategorii "łatwe" w języku Java.
+[SPOJ](https://pl.spoj.com/) to platforma internetowa, która oferuje zadania programistyczne do rozwiązania w różnych językach programowania. Repozytorium zawiera profesjonalne rozwiązania wielu zadań z kategorii "łatwe" w języku Java.
 
 ## Zadania
 
