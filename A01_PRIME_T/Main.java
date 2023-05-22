@@ -1,7 +1,7 @@
 /*
-https://pl.spoj.com/problems/PRIME_T
-Liczby Pierwsze
-*/
+ https://pl.spoj.com/problems/PRIME_T
+ Liczby Pierwsze
+ */
 
 package A01_PRIME_T;
 
@@ -25,7 +25,12 @@ public class Main {
                 .forEach(isPrime -> System.out.println(isPrime ? "TAK" : "NIE"));
     }
 
-    // Metoda sprawdzająca, czy liczba jest liczbą pierwszą
+    /**
+     * Metoda sprawdzająca, czy liczba jest liczbą pierwszą.
+     *
+     * @param number liczba do sprawdzenia
+     * @return true, jeśli liczba jest liczbą pierwszą; false w przeciwnym razie
+     */
     public static boolean isPrime(int number) {
         if (number < 2) {
             return false;
