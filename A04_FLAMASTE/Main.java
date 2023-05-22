@@ -1,43 +1,49 @@
-//
-// https://pl.spoj.com/problems/FLAMASTE
-// Flamaster
-//
+/*
+ https://pl.spoj.com/problems/FLAMASTE
+ Flamaster
+ */
 
-package latweA.Strona1.A04_FLAMASTE;
+package A04_FLAMASTE;
 
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
-        int test = scanner.nextInt();
+        int testCount = scanner.nextInt();
+        scanner.nextLine(); // Pominięcie znaku nowej linii
 
-        for (int i = 0; i < test; i++) {
-            String str = scanner.next();
-            String[] strArray = str.split("");
-
-            int numberOfChar = 1;
-            String newString = "";
-
-            for (int k = 0; k < strArray.length; k++) {
-                if (k != strArray.length - 1 && strArray[k + 1].equals(strArray[k])) {
-                    numberOfChar++;
-                } else {
-                    if (numberOfChar == 1) {
-                        newString += strArray[k];
-                        numberOfChar = 1;
-                    } else if (numberOfChar > 2) {
-                        newString += strArray[k] + numberOfChar;
-                        numberOfChar = 1;
-                    } else {
-                        newString += strArray[k];
-                        newString += strArray[k];
-                        numberOfChar = 1;
-                    }
-                }
-            }
-            System.out.println(newString);
+        for (int i = 0; i < testCount; i++) {
+            String word = scanner.nextLine();
+            String compressedWord = compressWord(word);
+            System.out.println(compressedWord);
         }
+    }
+
+    /**
+     * Kompresuje słowo, zastępując kolejne powtarzające się znaki znakiem, po którym następuje liczba.
+     *
+     * @param word słowo wejściowe
+     * @return skompresowane słowo
+     */
+    private static String compressWord(String word) {
+        StringBuilder compressed = new StringBuilder();
+        int count = 1;
+
+        for (int i = 0; i < word.length(); i++) {
+            if (i < word.length() - 1 && word.charAt(i + 1) == word.charAt(i)) {
+                count++;
+            } else {
+                compressed.append(word.charAt(i));
+                if (count > 2) {
+                    compressed.append(count);
+                } else if (count == 2) {
+                    compressed.append(word.charAt(i));
+                }
+                count = 1;
+            }
+        }
+
+        return compressed.toString();
     }
 }
