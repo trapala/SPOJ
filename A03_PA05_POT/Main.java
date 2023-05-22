@@ -1,7 +1,7 @@
 /*
  https://pl.spoj.com/problems/PA05_POT
  Czy umiesz potęgować
-*/
+ */
 
 package A03_PA05_POT;
 
@@ -40,21 +40,42 @@ class Main {
         private final int a;
         private final int b;
 
+        /**
+         * Konstruktor klasy Case.
+         *
+         * @param a podstawa potęgi
+         * @param b wykładnik potęgi
+         */
         public Case(int a, int b) {
             this.a = a;
             this.b = b;
         }
 
+        /**
+         * Metoda zwracająca podstawę potęgi.
+         *
+         * @return podstawa potęgi
+         */
         public int getA() {
             return a;
         }
 
+        /**
+         * Metoda zwracająca wykładnik potęgi.
+         *
+         * @return wykładnik potęgi
+         */
         public int getB() {
             return b;
         }
     }
 
-    // Metoda do wyznaczania ostatniej cyfry liczby ab
+    /**
+     * Metoda do wyznaczania ostatniej cyfry liczby ab.
+     *
+     * @param testCase obiekt klasy Case reprezentujący przypadek
+     * @return ostatnia cyfra liczby ab
+     */
     private static int calculateLastDigit(Case testCase) {
         int a = testCase.getA() % 10;
         int b = testCase.getB() % 4 + 4;
