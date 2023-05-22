@@ -82,8 +82,16 @@ git clone https://github.com/trapala/SPOJ.git
 ```
 
 ## Contributing
+ 
+Jeśli chcesz dodać swoje rozwiązanie dla dowolnego zadania lub poprawić istniejące rozwiązania, zapraszamy do składania wniosków o przystąpienie do projektu.
 
-Jeśli chcesz dodać swoje rozwiązanie do repozytorium, możesz to zrobić poprzez utworzenie nowego pull requesta. Upewnij się, że Twoje rozwiązanie jest poprawne i dobrze udokumentowane.
+Forknij repozytorium (https://github.com/trapala/SPOJ/fork)
+Stwórz nowy branch (git checkout -b feature/rozwiazanie-zadania)
+Zatwierdź zmiany (git commit -am 'Dodano rozwiązanie zadania')
+Wypchnij branch do repozytorium (git push origin feature/rozwiazanie-zadania)
+Stwórz nowe Pull Request
+
+Upewnij się, że Twoje rozwiązanie jest poprawne i dobrze udokumentowane.
 
 ## Licencja
 
