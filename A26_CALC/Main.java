@@ -3,13 +3,13 @@
 // Kalkulator
 //
 
-package latweA.Strona1.A26_CALC;
+package A26_CALC;
 
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws java.lang.Exception {
-        Scanner scanner = new Scanner(System.in)
+        Scanner scanner = new Scanner(System.in);
         int suma;
         
         while (scanner.hasNext()) {
