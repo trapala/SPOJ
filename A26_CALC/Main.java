@@ -18,23 +18,14 @@ public class Main {
             int b = scanner.nextInt();
 
             switch (znak) {
-                case "+":
-                    suma = a + b;
-                    break;
-                case "-":
-                    suma = a - b;
-                    break;
-                case "*":
-                    suma = a * b;
-                    break;
-                case "/":
-                    suma = a / b;
-                    break;
-                case "%":
-                    suma = a % b;
-                    break;
-                default:
+                case "+" -> suma = a + b;
+                case "-" -> suma = a - b;
+                case "*" -> suma = a * b;
+                case "/" -> suma = a / b;
+                case "%" -> suma = a % b;
+                default -> {
                     return;
+                }
             }
             System.out.println(suma);
         }
