@@ -10,6 +10,9 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
+/**
+ * Program sprawdza ostatnią cyfrę wyniku potęgowania liczby a do potęgi b.
+ */
 class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -87,3 +90,11 @@ class Main {
         return (int) (Math.pow(a, b) % 10);
     }
 }
+
+/*
+ Program wczytuje liczbę przypadków do rozważenia, a następnie dla każdego przypadku wczytuje parę liczb, a i b.
+ Algorytm opiera się na obliczeniu ostatniej cyfry wyniku potęgowania liczby a do potęgi b.
+ Wykorzystuję klasę Case do przechowywania danych dla poszczególnych przypadków.
+ Metoda calculateLastDigit oblicza ostatnią cyfrę liczby ab, gdzie a jest podstawą potęgi, a wykładnikiem potęgi jest b.
+ Wynik dla każdego przypadku jest wyświetlany na standardowym wyjściu.
+ */
