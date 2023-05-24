@@ -9,6 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Program oblicza dwie ostatnie cyfry silni dla podanej liczby.
+ */
 public class Main {
     /**
      * Metoda zwracająca dwie ostatnie cyfry silni dla danej liczby.
@@ -53,8 +56,10 @@ public class Main {
 }
 
 /*
+ Program wczytuje liczbę testów, a następnie dla każdego testu oblicza dwie ostatnie cyfry silni dla podanej liczby.
+ Algorytm polega na iteracyjnym obliczaniu silni dla danej liczby, zwracając jedynie dwie ostatnie cyfry wyniku.
  W metodzie calculateFactorialLastTwoDigits() zastosowałem proste obliczenia matematyczne, aby nie przekroczyć limitu czasu odpowiedzi.
- Jeżeli liczba jest większa lub równa 10, to zwracane są cyfry 0.
+ Jeżeli liczba jest większa lub równa 10, to zwracane są dwie cyfry 0.
  W przeciwnym przypadku obliczana jest silnia przy użyciu modulo 100, a następnie cyfry dziesiątek i jedności są wydzielane za pomocą dzielenia i reszty z dzielenia.
  Użyłem kolekcji List do przechowywania liczb testowych.
  Następnie, przy użyciu strumieni, mapuję każdą liczbę na wynik calculateFactorialLastTwoDigits() i wyświetlam wynik w odpowiednim formacie.
