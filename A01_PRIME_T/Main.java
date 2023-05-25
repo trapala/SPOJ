@@ -16,10 +16,10 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int n = scanner.nextInt(); // liczba testów
+        int testCases = scanner.nextInt(); // liczba testów
 
         List<Integer> numbers = new ArrayList<>();
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < testCases; i++) {
             numbers.add(scanner.nextInt()); // wczytaj liczby
         }
 
