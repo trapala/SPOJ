@@ -16,12 +16,12 @@ import java.util.stream.Collectors;
 class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt(); // liczba przypadków do rozważenia
+        int testCases = scanner.nextInt(); // liczba przypadków do rozważenia
 
         List<Case> cases = new ArrayList<>();
 
         // Wczytanie danych dla każdego przypadku i dodanie go do listy cases
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < testCases; i++) {
             int a = scanner.nextInt(); // podstawa
             int b = scanner.nextInt(); // wykładnik
             cases.add(new Case(a, b));
