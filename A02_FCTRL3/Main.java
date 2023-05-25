@@ -13,6 +13,21 @@ import java.util.Scanner;
  * Program oblicza dwie ostatnie cyfry silni dla podanej liczby.
  */
 public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int testCases = scanner.nextInt();
+
+        List<Integer> numbers = new ArrayList<>();
+        for (int i = 0; i < testCases; i++) {
+            numbers.add(scanner.nextInt()); // Wczytaj liczby testowe
+        }
+
+        numbers.stream()
+                .map(Main::calculateFactorialLastTwoDigits) // Wywołaj metodę calculateFactorialLastTwoDigits() dla każdej liczby
+                .forEach(result -> System.out.println(result[0] + " " + result[1])); // Wyświetl wynik w formacie "cyfra_dziesiątek cyfra_jedności"
+    }
+
     /**
      * Metoda zwracająca dwie ostatnie cyfry silni dla danej liczby.
      *
@@ -36,22 +51,6 @@ public class Main {
         }
 
         return new int[]{tensDigit, onesDigit};
-    }
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int tests;
-
-        tests = scanner.nextInt();
-
-        List<Integer> numbers = new ArrayList<>();
-        for (int i = 0; i < tests; i++) {
-            numbers.add(scanner.nextInt()); // Wczytaj liczby testowe
-        }
-
-        numbers.stream()
-                .map(Main::calculateFactorialLastTwoDigits) // Wywołaj metodę calculateFactorialLastTwoDigits() dla każdej liczby
-                .forEach(result -> System.out.println(result[0] + " " + result[1])); // Wyświetl wynik w formacie "cyfra_dziesiątek cyfra_jedności"
     }
 }
 
