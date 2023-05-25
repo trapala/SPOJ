@@ -13,6 +13,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
         int testCount = scanner.nextInt();
         scanner.nextLine(); // Pominięcie znaku nowej linii
 
