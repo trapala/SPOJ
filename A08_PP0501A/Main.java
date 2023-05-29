@@ -1,31 +1,52 @@
-//
-// https://pl.spoj.com/problems/PP0501A/
-// NWD
-//
+/*
+ https://pl.spoj.com/problems/PP0501A/
+ NWD
+ */
 
-package latweA.Strona1.A08_PP0501A;
+
+package A08_PP0501A;
 
 import java.util.Scanner;
 
+/**
+ * Program oblicza największy wspólny dzielnik (NWD) dla podanych par liczb.
+ */
 public class Main {
     public static void main(String[] args) {
-        int firstNumber, secondNumber;
         Scanner scanner = new Scanner(System.in);
-        int tests = Integer.parseInt(scanner.nextLine());
+        int testCount = scanner.nextInt(); // liczba testów
 
-        for (int i = 0; i < tests; i++) {
-            String[] line = scanner.nextLine().split(" ");
-            firstNumber = Integer.parseInt(line[0]);
-            secondNumber = Integer.parseInt(line[1]);
+        for (int i = 0; i < testCount; i++) {
+            int a = scanner.nextInt(); // pierwsza liczba
+            int b = scanner.nextInt(); // druga liczba
 
-            System.out.println(NWD(firstNumber, secondNumber));
+            int result = nwd(a, b); // obliczenie największego wspólnego dzielnika
+            System.out.println(result);
         }
+
+        scanner.close();
     }
 
-    static int NWD(int a, int b) {
-        if (b == 0)
-            return a;
-        else
-            return NWD(b, a % b);
+    /**
+     * Metoda obliczająca największy wspólny dzielnik dwóch liczb.
+     *
+     * @param a pierwsza liczba
+     * @param b druga liczba
+     * @return największy wspólny dzielnik
+     */
+    public static int nwd(int a, int b) {
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return a;
     }
 }
+
+/*
+ Program wczytuje liczbę testów, a następnie dla każdego testu oblicza największy wspólny dzielnik (NWD) dla podanych liczb.
+ Algorytm opiera się na iteracyjnym obliczaniu NWD przy użyciu algorytmu Euklidesa.
+ Wynik NWD jest wypisywany na standardowym wyjściu.
+ Metoda nwd oblicza największy wspólny dzielnik dwóch liczb.
+ */
