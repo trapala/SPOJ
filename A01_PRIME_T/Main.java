@@ -1,6 +1,6 @@
 /*
- https://pl.spoj.com/problems/PRIME_T
- Liczby Pierwsze
+ * https://pl.spoj.com/problems/PRIME_T
+ * Liczby Pierwsze
  */
 
 package A01_PRIME_T;
@@ -50,11 +50,11 @@ public class Main {
 }
 
 /*
- Program wczytuje liczbę testów, a następnie dla każdego testu sprawdza, czy podana liczba jest liczbą pierwszą.
- Algorytm opiera się na iteracyjnym sprawdzaniu podzielności liczby przez liczby od 2 do pierwiastka kwadratowego z tej liczby.
- Użyłem kolekcji List do przechowywania wczytanych liczb.
- Następnie przekształcam tę listę na strumień przy pomocy metody stream().
- Wykorzystuję metodę map() do wywołania metody isPrime() na każdym elemencie strumienia.
- Na końcu używam metody forEach() do wyświetlenia wyników dla każdej liczby.
- Wynik dla każdego testu jest wypisywany na standardowe wyjście jako 'TAK', jeśli liczba jest pierwsza, lub 'NIE', jeśli nie jest.
+ * Program wczytuje liczbę testów, a następnie dla każdego testu sprawdza, czy podana liczba jest liczbą pierwszą.
+ * Algorytm opiera się na iteracyjnym sprawdzaniu podzielności liczby przez liczby od 2 do pierwiastka kwadratowego z tej liczby.
+ * Użyłem kolekcji List do przechowywania wczytanych liczb.
+ * Następnie przekształcam tę listę na strumień przy pomocy metody stream().
+ * Wykorzystuję metodę map() do wywołania metody isPrime() na każdym elemencie strumienia.
+ * Na końcu używam metody forEach() do wyświetlenia wyników dla każdej liczby.
+ * Wynik dla każdego testu jest wypisywany na standardowe wyjście jako 'TAK', jeśli liczba jest pierwsza, lub 'NIE', jeśli nie jest.
  */

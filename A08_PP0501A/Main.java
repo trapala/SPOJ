@@ -1,6 +1,6 @@
 /*
- https://pl.spoj.com/problems/PP0501A/
- NWD
+ * https://pl.spoj.com/problems/PP0501A/
+ * NWD
  */
 
 
@@ -45,8 +45,8 @@ public class Main {
 }
 
 /*
- Program wczytuje liczbę testów, a następnie dla każdego testu oblicza największy wspólny dzielnik (NWD) dla podanych liczb.
- Algorytm opiera się na iteracyjnym obliczaniu NWD przy użyciu algorytmu Euklidesa.
- Wynik NWD jest wypisywany na standardowym wyjściu.
- Metoda nwd oblicza największy wspólny dzielnik dwóch liczb.
+ * Program wczytuje liczbę testów, a następnie dla każdego testu oblicza największy wspólny dzielnik (NWD) dla podanych liczb.
+ * Algorytm opiera się na iteracyjnym obliczaniu NWD przy użyciu algorytmu Euklidesa.
+ * Wynik NWD jest wypisywany na standardowym wyjściu.
+ * Metoda nwd oblicza największy wspólny dzielnik dwóch liczb.
  */

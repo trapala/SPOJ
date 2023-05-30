@@ -1,6 +1,6 @@
 /*
- https://pl.spoj.com/problems/PRZEDSZK
- Przedszkolanka
+ * https://pl.spoj.com/problems/PRZEDSZK
+ * Przedszkolanka
  */
 
 package A05_PRZEDSZK;
@@ -61,11 +61,11 @@ public class Main {
 }
 
 /*
- Program wczytuje liczbę testów, a następnie dla każdego zestawu danych oblicza liczbę cukierków, które przedszkolanka powinna zakupić.
- Algorytm opiera się na obliczeniu największego wspólnego dzielnika liczby dzieci z obu grup.
- Następnie, korzystając z tej wartości, obliczana jest minimalna liczba cukierków,
- którą przedszkolanka powinna kupić, aby spełnić warunki rozdania cukierków dzieciom.
- Metoda calculateCandies przyjmuje liczbę dzieci w obu grupach i zwraca liczbę cukierków do zakupu.
- Metoda calculateGCD oblicza największy wspólny dzielnik dwóch liczb.
- Wynik jest wypisywany na standardowe wyjście.
+ * Program wczytuje liczbę testów, a następnie dla każdego zestawu danych oblicza liczbę cukierków, które przedszkolanka powinna zakupić.
+ * Algorytm opiera się na obliczeniu największego wspólnego dzielnika liczby dzieci z obu grup.
+ * Następnie, korzystając z tej wartości, obliczana jest minimalna liczba cukierków,
+ * którą przedszkolanka powinna kupić, aby spełnić warunki rozdania cukierków dzieciom.
+ * Metoda calculateCandies przyjmuje liczbę dzieci w obu grupach i zwraca liczbę cukierków do zakupu.
+ * Metoda calculateGCD oblicza największy wspólny dzielnik dwóch liczb.
+ * Wynik jest wypisywany na standardowe wyjście.
  */

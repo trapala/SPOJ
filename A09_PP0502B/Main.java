@@ -1,28 +1,65 @@
-//
-// https://pl.spoj.com/problems/PP0502B/
-// Tablice
-//
+/*
+ * https://pl.spoj.com/problems/PP0502B/
+ * Tablice
+ */
 
-package latweA.Strona1.A09_PP0502B;
+package A09_PP0502B;
 
 import java.util.Scanner;
 
+/**
+ * Program odwraca kolejność elementów w tablicy.
+ */
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int tests = Integer.parseInt(scanner.nextLine());
+        int testCount = scanner.nextInt(); // liczba testów
 
-        for (int i = 0; i < tests; i++) {
-            int n = scanner.nextInt();
-            int[] arrayInt = new int[n];
+        for (int i = 0; i < testCount; i++) {
+            int n = scanner.nextInt(); // liczba elementów w tablicy
+            int[] array = new int[n];
 
+            // Wczytanie elementów tablicy
             for (int j = 0; j < n; j++) {
-                arrayInt[j] = scanner.nextInt();
+                array[j] = scanner.nextInt();
             }
-            for (int k = n - 1; k >= 0; k--) {
-                System.out.print(arrayInt[k] + " ");
+
+            // Odwrócenie kolejności elementów w tablicy
+            reverseArray(array);
+
+            // Wyświetlenie odwróconej tablicy
+            for (int j = 0; j < n; j++) {
+                System.out.print(array[j] + " ");
             }
             System.out.println();
         }
+
+        scanner.close();
+    }
+
+    /**
+     * Metoda odwracająca kolejność elementów w tablicy.
+     *
+     * @param array tablica liczb
+     */
+    public static void reverseArray(int[] array) {
+        int start = 0;
+        int end = array.length - 1;
+
+        while (start < end) {
+            // Zamiana miejscami elementów na krańcach tablicy
+            int temp = array[start];
+            array[start] = array[end];
+            array[end] = temp;
+
+            start++;
+            end--;
+        }
     }
 }
+/*
+ * Program wczytuje liczbę testów, a następnie dla każdego testu wczytuje liczbę elementów w tablicy oraz same elementy.
+ * Następnie program odwraca kolejność elementów w tablicy za pomocą metody reverseArray, a potem wypisuje odwróconą tablicę.
+ * Metoda reverseArray odwraca kolejność elementów w tablicy poprzez zamianę miejscami elementów na krańcach tablicy.
+ */
+

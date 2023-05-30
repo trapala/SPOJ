@@ -1,7 +1,7 @@
 /*
- https://pl.spoj.com/problems/RNO_DOD
- Proste dodawanie
-*/
+ * https://pl.spoj.com/problems/RNO_DOD
+ * Proste dodawanie
+ */
 
 package A06_RNO_DOD;
 
@@ -47,9 +47,9 @@ public class Main {
 }
 
 /*
- Program wczytuje liczbę testów, a następnie dla każdego testu oblicza sumę liczb całkowitych podanych na wejściu.
- Algorytm polega na wczytaniu n-liczb i obliczeniu ich sumy.
- Wynik jest wypisywany na standardowe wyjście.
- Metoda sumNumbers przyjmuje tablicę liczb całkowitych i zwraca ich sumę.
+ * Program wczytuje liczbę testów, a następnie dla każdego testu oblicza sumę liczb całkowitych podanych na wejściu.
+ * Algorytm polega na wczytaniu n-liczb i obliczeniu ich sumy.
+ * Wynik jest wypisywany na standardowe wyjście.
+ * Metoda sumNumbers przyjmuje tablicę liczb całkowitych i zwraca ich sumę.
  */
 

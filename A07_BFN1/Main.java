@@ -1,6 +1,6 @@
 /*
- https://pl.spoj.com/problems/BFN1/
- Zabawne Dodawanie Piotrusia
+ * https://pl.spoj.com/problems/BFN1/
+ * Zabawne Dodawanie Piotrusia
  */
 
 package A07_BFN1;
@@ -68,8 +68,8 @@ public class Main {
 }
 
 /*
- Program wczytuje liczbę testów, a następnie dla każdego testu oblicza palindrom i liczbę dodawań prowadzących do tego palindromu.
- Algorytm polega na sprawdzeniu, czy liczba jest palindromem. Jeśli nie, liczba zostaje odwrócona i dodana do pierwotnej liczby.
- Proces jest powtarzany, aż osiągnięty zostanie palindrom. Wynik, czyli palindrom i liczba dodawań, jest wypisywany na standardowym wyjściu.
- Metoda isPalindrome sprawdza, czy liczba jest palindromem. Metoda calculatePalindrome oblicza palindrom i liczbę dodawań dla danej liczby.
+ * Program wczytuje liczbę testów, a następnie dla każdego testu oblicza palindrom i liczbę dodawań prowadzących do tego palindromu.
+ * Algorytm polega na sprawdzeniu, czy liczba jest palindromem. Jeśli nie, liczba zostaje odwrócona i dodana do pierwotnej liczby.
+ * Proces jest powtarzany, aż osiągnięty zostanie palindrom. Wynik, czyli palindrom i liczba dodawań, jest wypisywany na standardowym wyjściu.
+ * Metoda isPalindrome sprawdza, czy liczba jest palindromem. Metoda calculatePalindrome oblicza palindrom i liczbę dodawań dla danej liczby.
  */

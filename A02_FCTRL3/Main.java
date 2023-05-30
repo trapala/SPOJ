@@ -1,6 +1,6 @@
 /*
- https://pl.spoj.com/problems/FCTRL3
- Dwie cyfry silni
+ * https://pl.spoj.com/problems/FCTRL3
+ * Dwie cyfry silni
  */
 
 package A02_FCTRL3;
@@ -55,11 +55,11 @@ public class Main {
 }
 
 /*
- Program wczytuje liczbę testów, a następnie dla każdego testu oblicza dwie ostatnie cyfry silni dla podanej liczby.
- Algorytm polega na iteracyjnym obliczaniu silni dla danej liczby, zwracając jedynie dwie ostatnie cyfry wyniku.
- W metodzie calculateFactorialLastTwoDigits() zastosowałem proste obliczenia matematyczne, aby nie przekroczyć limitu czasu odpowiedzi.
- Jeżeli liczba jest większa lub równa 10, to zwracane są dwie cyfry 0.
- W przeciwnym przypadku obliczana jest silnia przy użyciu modulo 100, a następnie cyfry dziesiątek i jedności są wydzielane za pomocą dzielenia i reszty z dzielenia.
- Użyłem kolekcji List do przechowywania liczb testowych.
- Następnie, przy użyciu strumieni, mapuję każdą liczbę na wynik calculateFactorialLastTwoDigits() i wyświetlam wynik w odpowiednim formacie.
+ * Program wczytuje liczbę testów, a następnie dla każdego testu oblicza dwie ostatnie cyfry silni dla podanej liczby.
+ * Algorytm polega na iteracyjnym obliczaniu silni dla danej liczby, zwracając jedynie dwie ostatnie cyfry wyniku.
+ * W metodzie calculateFactorialLastTwoDigits() zastosowałem proste obliczenia matematyczne, aby nie przekroczyć limitu czasu odpowiedzi.
+ * Jeżeli liczba jest większa lub równa 10, to zwracane są dwie cyfry 0.
+ * W przeciwnym przypadku obliczana jest silnia przy użyciu modulo 100, a następnie cyfry dziesiątek i jedności są wydzielane za pomocą dzielenia i reszty z dzielenia.
+ * Użyłem kolekcji List do przechowywania liczb testowych.
+ * Następnie, przy użyciu strumieni, mapuję każdą liczbę na wynik calculateFactorialLastTwoDigits() i wyświetlam wynik w odpowiednim formacie.
  */
