@@ -45,10 +45,10 @@ public class Main {
 }
 
 /*
-* Program oblicza pola koła na podstawie podanego promienia (radius) i odległości między środkami sfer (distance).
-* Algorytm polega na wczytaniu promienia i odległości z wejścia, a następnie wykorzystaniu tych wartości do obliczenia pola koła.
-* Wartość liczby pi jest przyjęta jako 3.141592654.
-* Metoda calculateCircleArea przyjmuje promień, odległość i wartość liczby pi jako parametry,
-* a następnie wykonuje obliczenia na podstawie tych danych.
-* Wynik, reprezentujący pole koła, jest zaokrąglany do dwóch miejsc po przecinku i wypisywany na standardowym wyjściu.
+ * Program oblicza pola koła na podstawie podanego promienia (radius) i odległości między środkami sfer (distance).
+ * Algorytm polega na wczytaniu promienia i odległości z wejścia, a następnie wykorzystaniu tych wartości do obliczenia pola koła.
+ * Wartość liczby pi jest przyjęta jako 3.141592654.
+ * Metoda calculateCircleArea przyjmuje promień, odległość i wartość liczby pi jako parametry,
+ * a następnie wykonuje obliczenia na podstawie tych danych.
+ * Wynik, reprezentujący pole koła, jest zaokrąglany do dwóch miejsc po przecinku i wypisywany na standardowym wyjściu.
  */
