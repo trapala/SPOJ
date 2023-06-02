@@ -1,29 +1,70 @@
-//
-// https://pl.spoj.com/problems/PP0504D/
-// Reprezentacja liczb typu float
-//
+/*
+ * https://pl.spoj.com/problems/PP0504D/
+ * Reprezentacja liczb typu float
+ */
 
-package latweA.Strona1.A12_PP0504D;
+package A12_PP0504D;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Program obliczający reprezentację szesnastkową liczb typu float.
+ */
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int tests = scanner.nextInt();
+        int testCount = scanner.nextInt();
 
-        for (int i = 0; i < tests; i++) {
+        List<Case> cases = new ArrayList<>();
 
-            float line = scanner.nextFloat();
-            long bits = Float.floatToIntBits(line);
-            //    long bits = 272214023; // system dziesiętny
-            System.out.println(bits);
-            int k = (byte) (bits >> 24) & 0xff; // 16, iloczyn bitowy AND otrzymujemy 8 najmłodszych bitów po przesunięciu >>(w prawo)
-            int k2 = (byte) (bits >> 16) & 0xff; // 57
-            int k3 = (byte) (bits >> 8) & 0xff; // 168
-            int k4 = (byte) (bits) & 0xff; // 7
+        for (int i = 0; i < testCount; i++) {
+            float number = scanner.nextFloat();
+            cases.add(new Case(number));
+        }
 
-            System.out.println(Integer.toHexString(k) + " " + Integer.toHexString(k2) + " " + Integer.toHexString(k3) + " " + Integer.toHexString(k4));
-        }  // wynik w systemie base 16 = 10 39 a8 7
+        for (Case testCase : cases) {
+            System.out.println(testCase.getHexRepresentation());
+        }
     }
 }
+
+/**
+ * Klasa reprezentująca pojedynczy przypadek testowy.
+ */
+class Case {
+    private final long bits;
+
+    /**
+     * Konstruktor klasy Case.
+     *
+     * @param number liczba zmiennoprzecinkowa typu float
+     */
+    public Case(float number) {
+        this.bits = Float.floatToIntBits(number);
+    }
+
+    /**
+     * Metoda zwracająca reprezentację szesnastkową liczby float.
+     *
+     * @return reprezentacja szesnastkowa liczby float
+     */
+    public String getHexRepresentation() {
+        int k = (byte) (bits >> 24) & 0xff;
+        int k2 = (byte) (bits >> 16) & 0xff;
+        int k3 = (byte) (bits >> 8) & 0xff;
+        int k4 = (byte) bits & 0xff;
+
+        return Integer.toHexString(k) + " " + Integer.toHexString(k2) + " " +
+                Integer.toHexString(k3) + " " + Integer.toHexString(k4);
+    }
+}
+
+/*
+ * Program wczytuje liczbę przypadków do rozważenia, a następnie dla każdego przypadku wczytuje pojedynczą liczbę zmiennoprzecinkową typu float.
+ * Algorytm programu polega na obliczeniu reprezentacji szesnastkowej dla podanej liczby float.
+ * Program wykorzystuje klasę Case, która służy do przechowywania danych dla poszczególnych przypadków testowych.
+ * Metoda getHexRepresentation() wykonuje operację obliczania reprezentacji szesnastkowej liczby float.
+ * Wynik dla każdego przypadku testowego jest wypisywany na standardowym wyjściu.
+ */
