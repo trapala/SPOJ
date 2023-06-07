@@ -1,9 +1,9 @@
-//
-// https://pl.spoj.com/problems/GLUTTON/
-// Obżartuchy
-//
+/*
+ * https://pl.spoj.com/problems/GLUTTON/
+ * Obżartuchy
+ */
 
-package latweA.Strona1.A13_GLUTTON;
+package A13_GLUTTON;
 
 import java.util.Scanner;
 
