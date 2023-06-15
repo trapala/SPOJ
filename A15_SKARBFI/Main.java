@@ -1,9 +1,9 @@
-//
-// https://pl.spoj.com/problems/SKARBFI/
-// SkarbFinder
-//
+/*
+ * https://pl.spoj.com/problems/SKARBFI/
+ * SkarbFinder
+ */
 
-package latweA.Strona1.A15_SKARBFI;
+package A15_SKARBFI;
 
 import java.util.Scanner;
 
