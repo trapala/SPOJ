@@ -1,9 +1,10 @@
-//
-// https://pl.spoj.com/problems/PTROL/
-// ROL
-//
+/*
+ * https://pl.spoj.com/problems/PTROL/
+ * ROL
+ */
 
-package latweA.Strona1.A17_PTROL;
+
+package A17_PTROL;
 
 import java.util.Scanner;
 
