@@ -1,9 +1,10 @@
-//
-// https://pl.spoj.com/problems/EUCGAME/
-// Gra Euklidesa
-//
+/*
+ * https://pl.spoj.com/problems/EUCGAME/
+ * Gra Euklidesa
+ */
 
-package latweA.Strona1.A19_EUCGAME;
+
+package A19_EUCGAME;
 
 import java.util.Scanner;
 
