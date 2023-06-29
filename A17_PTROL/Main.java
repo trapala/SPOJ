@@ -3,37 +3,79 @@
  * ROL
  */
 
-
 package A17_PTROL;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * Program przesuwa elementy tablicy cyklicznie w lewo.
+ */
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int tests = scanner.nextInt();
+        int t = scanner.nextInt(); // liczba testów
 
-        for (int i = 0; i < tests; i++) {
-            int ileLiczb = scanner.nextInt();
-            int[] liczby = new int[ileLiczb];
+        // Przetwarzanie każdego testu
+        for (int i = 0; i < t; i++) {
+            int n = scanner.nextInt(); // liczba elementów w tablicy
+            int[] numbers = new int[n];
 
-            for (int j = 0; j < ileLiczb; j++) {
-                liczby[j] = scanner.nextInt();
+            // Wczytywanie elementów tablicy
+            for (int j = 0; j < n; j++) {
+                numbers[j] = scanner.nextInt();
             }
 
-            int[] wyswietl = leftArray(liczby);
-            for (int n : wyswietl) System.out.print(n + " ");
-        }
-    }
+            Case testCase = new Case(numbers);
+            testCase.rotateLeft();
 
-    static int[] leftArray(int[] array) {
-        int temp = array[0];
-        
-        for (int i = 0; i < array.length - 1; i++) {
-            array[i] = array[i + 1];
+            // Wyświetlanie wyniku
+            int[] rotatedNumbers = testCase.getNumbers();
+            Arrays.stream(rotatedNumbers).forEach(num -> System.out.print(num + " "));
+            System.out.println();
         }
-        array[array.length - 1] = temp;
-
-        return array;
     }
 }
+
+/**
+ * Klasa reprezentująca pojedynczy przypadek testowy.
+ */
+class Case {
+    private final int[] numbers;
+
+    /**
+     * Tworzy nowy obiekt klasy Case.
+     *
+     * @param numbers tablica liczb dla danego przypadku testowego.
+     */
+    public Case(int[] numbers) {
+        this.numbers = numbers;
+    }
+
+    /**
+     * Przesuwa elementy tablicy cyklicznie w lewo.
+     */
+    public void rotateLeft() {
+        int firstElement = numbers[0];
+        System.arraycopy(numbers, 1, numbers, 0, numbers.length - 1);
+        numbers[numbers.length - 1] = firstElement;
+    }
+
+    /**
+     * Zwraca tablicę liczb dla danego przypadku testowego.
+     *
+     * @return tablica liczb.
+     */
+    public int[] getNumbers() {
+        return numbers;
+    }
+}
+
+/*
+ * Program przesuwa elementy tablicy cyklicznie w lewo.
+ * Algorytm polega na przeniesieniu pierwszego elementu na koniec tablicy, zachowując kolejność pozostałych elementów.
+ * Wykorzystana jest klasa Case, która reprezentuje pojedynczy przypadek testowy.
+ * Metoda rotateLeft() przeprowadza przesunięcie elementów tablicy.
+ * Metoda getNumbers() zwraca tablicę liczb dla danego przypadku testowego.
+ * Wyniki są wyświetlane na standardowym wyjściu za pomocą strumienia.
+ */
