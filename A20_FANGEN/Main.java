@@ -1,9 +1,9 @@
-//
-// https://pl.spoj.com/problems/FANGEN/
-// Wiatraczki
-//
+/*
+ * https://pl.spoj.com/problems/FANGEN/
+ * Wiatraczki
+ */
 
-package latweA.Strona1.A20_FANGEN;
+package A20_FANGEN;
 
 import java.util.ArrayList;
 import java.util.List;
