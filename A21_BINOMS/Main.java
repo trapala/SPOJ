@@ -1,9 +1,9 @@
-//
-// https://pl.spoj.com/problems/BINOMS/
-// Dwumiany
-//
+/*
+ * https://pl.spoj.com/problems/BINOMS/
+ * Dwumiany
+ */
 
-package latweA.Strona1.A21_BINOMS;
+package A21_BINOMS;
 
 import java.util.Scanner;
 
