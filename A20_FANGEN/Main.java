@@ -9,15 +9,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Klasa reprezentująca kierunek wiatraczka.
+ */
 enum Kierunek {
     LEWO, PRAWO
 }
 
-interface ObslugaTablicy {
-    public void Uzupelnij(char[][] tab);
-    public void Wyswietl(char[][] tab);
-}
-
+/**
+ * Program generuje wiatraczki o różnych rozmiarach.
+ */
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -30,13 +31,13 @@ public class Main {
             list.add(r);
         } while (r != 0);
 
-        for (int i = 0; i < list.size(); i++) {
-            if (list.get(i) > 0) {
+        for (Integer integer : list) {
+            if (integer > 0) {
                 kierunek = Kierunek.LEWO;
             } else {
                 kierunek = Kierunek.PRAWO;
             }
-            r = Math.abs(list.get(i));
+            r = Math.abs(integer);
             char[][] tab = new char[r * 2][r * 2];
             Wiatrak wiatrak = new Wiatrak();
             wiatrak.Uzupelnij(tab);
@@ -46,7 +47,15 @@ public class Main {
     }
 }
 
-class Wiatrak implements ObslugaTablicy {
+/**
+ * Klasa generująca wiatraczki.
+ */
+class Wiatrak {
+    /**
+     * Metoda do wypełniania tablicy gwiazdkami.
+     *
+     * @param tab Tablica znaków
+     */
     public void Uzupelnij(char[][] tab) {
         for (int i = 0; i < tab.length; i++) {
             for (int j = 0; j < tab.length; j++) {
@@ -55,6 +64,12 @@ class Wiatrak implements ObslugaTablicy {
         }
     }
 
+    /**
+     * Metoda do rysowania wiatraczka.
+     *
+     * @param tab      Tablica znaków
+     * @param kierunek Kierunek wiatraczka
+     */
     public void Rysuj(char[][] tab, Kierunek kierunek) {
         for (int i = 0; i < (tab.length / 2) - 1; i++) {
             for (int j = i; j < tab.length - i - 1; j++) {
@@ -80,14 +95,28 @@ class Wiatrak implements ObslugaTablicy {
         }
     }
 
+    /**
+     * Metoda wyświetla zawartość tablicy znaków.
+     *
+     * @param tab Tablica znaków, która zostanie wyświetlona.
+     */
     public void Wyswietl(char[][] tab) {
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < tab.length; i++) {
+        for (char[] chars : tab) {
             for (int j = 0; j < tab.length; j++) {
-                sb.append(tab[i][j]);
+                sb.append(chars[j]);
             }
             sb.append("\n");
         }
-        System.out.println(sb.toString());
+        System.out.println(sb);
     }
 }
+
+/*
+ * Program generuje wiatraczki o różnych rozmiarach na podstawie podanych danych wejściowych.
+ * Algorytm polega na wypełnieniu tablicy znakami '*' oraz rysowaniu wiatraczka w zależności od określonego kierunku.
+ * Klasa Wiatrak jest odpowiedzialna za generowanie wiatraczków. Metoda Uzupelnij() wypełnia tablicę znakami '*',
+ * metoda Rysuj() rysuje wiatraczek na tablicy zgodnie z określonym kierunkiem,
+ * a metoda Wyswietl() wyświetla zawartość tablicy znaków.
+ * Wynik jest wyświetlany na standardowym wyjściu.
+ */
