@@ -1,9 +1,9 @@
-//
-// https://pl.spoj.com/problems/SUMA/
-// SUMA
-//
+/*
+ * https://pl.spoj.com/problems/SUMA/
+ * SUMA
+ */
 
-package latweA.Strona1.A22_SUMA;
+package A22_SUMA;
 
 import java.util.Scanner;
 
