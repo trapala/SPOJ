@@ -1,9 +1,9 @@
-//
-// https://pl.spoj.com/problems/ROWNANIE/
-// Równanie kwadratowe
-//
+/*
+ * https://pl.spoj.com/problems/ROWNANIE/
+ * Równanie kwadratowe
+ */
 
-package latweA.Strona1.A23_ROWNANIE;
+package A23_ROWNANIE;
 
 import java.util.Locale;
 import java.util.Scanner;
