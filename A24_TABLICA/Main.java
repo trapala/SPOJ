@@ -1,8 +1,9 @@
-//
-// https://pl.spoj.com/problems/TABLICA/
-// Tablica
-//
-package latweA.Strona1.A24_TABLICA;
+/*
+ * https://pl.spoj.com/problems/TABLICA/
+ * Tablica
+ */
+
+package A24_TABLICA;
 
 import java.util.Scanner;
 
