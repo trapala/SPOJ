@@ -1,7 +1,7 @@
-//
-// https://pl.spoj.com/problems/CALC/
-// Kalkulator
-//
+/*
+ * https://pl.spoj.com/problems/CALC/
+ * Kalkulator
+ */
 
 package A26_CALC;
 
