@@ -1,9 +1,10 @@
-//
-// https://pl.spoj.com/problems/POL/
-// Połowa
-//
+/*
+ * https://pl.spoj.com/problems/POL/
+ * Połowa
+ */
 
-package latweA.Strona1.A28_POL;
+
+package A28_POL;
 
 import java.util.Scanner;
 
