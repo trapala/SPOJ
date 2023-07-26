@@ -1,9 +1,9 @@
-//
-// https://pl.spoj.com/problems/VSR/
-// Prędkość średnia
-//
+/*
+ * https://pl.spoj.com/problems/VSR/
+ * Prędkość średnia
+ */
 
-package latweA.Strona1.A29_VSR;
+package A29_VSR;
 
 import java.io.BufferedOutputStream;
 import java.io.DataInputStream;
@@ -13,8 +13,8 @@ import java.io.OutputStream;
 public class Main {
     public static class Reader {
         final private int BUFFER_SIZE = 1 << 16;
-        private DataInputStream din;
-        private byte[] buffer;
+        private final DataInputStream din;
+        private final byte[] buffer;
         private int bufferPointer, bytesRead;
 
         private Reader() {
