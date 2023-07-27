@@ -1,9 +1,9 @@
-//
-// https://pl.spoj.com/problems/SYS/
-// Systemy pozycyjne
-//
+/*
+ * https://pl.spoj.com/problems/SYS/
+ * Systemy pozycyjne
+ */
 
-package latweA.Strona1.A30_SYS;
+package A30_SYS;
 
 import java.util.Scanner;
 
