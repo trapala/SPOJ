@@ -1,9 +1,9 @@
-//
-// https://pl.spoj.com/problems/PP0601B/
-// Podzielność
-//
+/*
+ * https://pl.spoj.com/problems/PP0601B/
+ * Podzielność
+ */
 
-package latweA.Strona1.A31_PP0601B;
+package A31_PP0601B;
 
 import java.util.Scanner;
 import java.util.TreeSet;
