@@ -1,9 +1,9 @@
-//
-// https://pl.spoj.com/problems/PP0601A2/
-// Test 3
-//
+/*
+ * https://pl.spoj.com/problems/PP0601A2/
+ * Test 3
+ */
 
-package latweA.Strona1.A32_PP0601A2;
+package A32_PP0601A2;
 
 import java.util.Scanner;
 
