@@ -1,9 +1,9 @@
-//
-// https://pl.spoj.com/problems/TRN/
-// Transponowanie macierzy
-//
+/*
+ * https://pl.spoj.com/problems/TRN/
+ * Transponowanie macierzy
+ */
 
-package latweA.Strona1.A33_TRN;
+package A33_TRN;
 
 import java.io.DataInputStream;
 import java.io.IOException;
@@ -12,8 +12,8 @@ public class Main {
 
     private static class Reader {
         final private int BUFFER_SIZE = 1 << 16;
-        private DataInputStream din;
-        private byte[] buffer;
+        private final DataInputStream din;
+        private final byte[] buffer;
         private int bufferPointer, bytesRead;
 
         private Reader() {
@@ -56,8 +56,8 @@ public class Main {
         }
 
         for (int i = 0; i < tab[0].length; i++) { // do ilości elementów w wierszu o indeksie 0
-            for (int j = 0; j < tab.length; j++) { // do ilości kolumn
-                System.out.print(tab[j][i] + " ");
+            for (int[] ints : tab) { // do ilości kolumn
+                System.out.print(ints[i] + " ");
             }
             System.out.println();
         }
