@@ -1,9 +1,9 @@
-//
-// https://pl.spoj.com/problems/PP0602A/
-// Parzyste nieparzyste
-//
+/*
+ * https://pl.spoj.com/problems/PP0602A/
+ * Parzyste nieparzyste
+ */
 
-package latweA.Strona1.A34_PP0602A;
+package A34_PP0602A;
 
 import java.util.ArrayList;
 import java.util.List;
